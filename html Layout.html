@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        header{
+            background-color: purple;
+            padding: 30px;
+            text-align: center;
+            font-size: 35px;
+        }
+        nav{
+            float: left;
+            width: 30%;
+            height: 350px;
+            background-color: orange;
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        ul a{
+            color: black;
+            text-decoration: none;
+            text-transform: capitalize;
+        }
+        article{
+            float: left;
+            padding: 20px;
+            width: 70%;
+            background-color: aqua;
+            height: 350px;
+        }
+        section::after{
+            content: " ";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: yellowgreen;
+            padding: 10px;
+            text-align: center;
+        }
+        @media(max-width: 600px){
+            nav,article{
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+        <header>
+            <h1>HEADER</h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <li><a href="#">one</a></li>
+                    <li><a href="#">Two</a></li>
+                    <li><a href="#">Three</a></li>
+                    <li><a href="#">Four</a></li>
+                    <li><a href="#">Five</a></li>
+                </ul>
+            </nav>
+            <article>
+                <h1>Article</h1>
+                <p>The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan (reigned from 1628 to 1658), to house the tomb of his favourite wife, Mumtaz Mahal. The tomb is the centrepiece of a 17-hectare (42-acre)complex, which includes a mosque and a guest house, and is set in formal gardens bounded on three sides by a crenellated wall.
+
+                    Construction of the mausoleum was essentially completed in 1643 but work continued on other phases of the project for another 10 years.</p>
+                <p>The Taj Mahal complex is believed to have been completed in its entirety in 1653 at a cost estimated at the time to be around 32 million rupees, which in 2015 would be approximately 52.8 billion rupees (U.S. $827 million). The construction project employed some 20,000 artisans under the guidance of a board of architects led by the court architect to the emperor, Ustad Ahmad Lahauri.</p>
+                </article>
+        </section>
+        <footer>
+            <p>This is about html layout</p>
+        </footer>
+</body>
+</html>
