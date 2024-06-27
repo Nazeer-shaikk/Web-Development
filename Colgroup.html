@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,th,td{
+            border-collapse: collapse;
+        }
+        /* #one td:nth-child(odd)
+        {
+            background-color: yellow;
+        }
+        #one td:nth-child(even) 
+        {
+            background-color: blue;
+        } */
+    </style>
+</head>
+<body>
+    <table id="one" border="1">
+        <caption>Student Academic Performance</caption>
+        <colgroup>
+            <col span="1" style="background-color: orange;">
+            <col>
+            <col style="background-color: green;">
+            <col>
+            <col style="background-color: pink;">
+        </colgroup> 
+        <tr>
+            <th>S.NO</th>
+            <th>NAME</th>
+            <th>MARKS</th>
+            <th>GRADE</th>
+            <th>REMARKS</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Nissy</td>
+            <td>500</td>
+            <td>A</td>
+            <td>Good</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Nissy<sup>2</sup></td>
+            <td>490</td>
+            <td>B</td>
+            <td>Good</td>
+        </tr>
+    </table>
+</body>
+</html>
